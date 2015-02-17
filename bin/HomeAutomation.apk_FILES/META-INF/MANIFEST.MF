@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: res/layout/device_list.xml
+SHA1-Digest: 1UQhzEG1vJ+oicR6Gx1DmCPXPzA=
+
+Name: res/drawable/blu_car_icon.png
+SHA1-Digest: F4uPdR2fqDS8OCcJhHmOlCYhAuw=
+
+Name: AndroidManifest.xml
+SHA1-Digest: wcxPJXTZXssJXByxiX1IpLdcxvk=
+
+Name: res/drawable/ic_menu_info_details.png
+SHA1-Digest: zw/qW/m5LeYUSWZO1tyOxd1+auU=
+
+Name: res/layout/aboutview.xml
+SHA1-Digest: TTCNLU3D+/Qozq66hXtMlIfc7J4=
+
+Name: res/layout/main.xml
+SHA1-Digest: 0yFoliO6r+LvG0UE+gZQfFwMfF0=
+
+Name: resources.arsc
+SHA1-Digest: jTOK+0qzp26T+IhfU5abqGEJznk=
+
+Name: res/menu/option_menu.xml
+SHA1-Digest: hgbE+Cfm5fQT9Q+RZZ5BBr6hWlo=
+
+Name: classes.dex
+SHA1-Digest: hRQMeVyHixBdpv1dyaAw7Oy3PBE=
+
+Name: res/layout/device_name.xml
+SHA1-Digest: d6gSIX1IHwx/0CByPIplj5viUYA=
+

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:background="#000000">
+    
+	<TextView 
+	   android:layout_marginLeft="80dp"
+android:textColor="#e74c3c"
+	     android:id="@+id/text1"
+	     android:textSize="20sp"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/hello"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" >
+        
+        <ToggleButton
+          
+            android:layout_centerHorizontal="true"
+            android:id="@+id/lamp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="send"
+            android:textOff="off"
+            android:textOn="on" />
+        <ImageView
+            android:id="@+id/im1"
+            android:src="@drawable/lightoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/lamp1"
+            android:layout_alignTop="@id/lamp1"
+            android:layout_alignBottom="@id/lamp1"
+            />
+             
+        <ToggleButton
+             android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/lamp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lamp1"
+            android:onClick="send"
+            android:textOff="off"
+            android:textOn="on" />
+
+        <ImageView
+            android:id="@+id/im2"
+            android:src="@drawable/lightoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/lamp2"
+            android:layout_alignTop="@id/lamp2"
+            android:layout_alignBottom="@id/lamp2"
+            />
+        
+        <ToggleButton
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lamp2"
+            android:onClick="send"
+            android:textOff="off"
+            android:textOn="on" />
+       
+        
+        <SeekBar
+		android:layout_centerHorizontal="true"
+        android:layout_below="@id/fan"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/regulator"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="100"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fan"
+            android:layout_alignRight="@+id/im2"
+            android:layout_alignTop="@+id/fan"
+            android:layout_marginRight="33dp"
+            android:text="Fan 1: "
+            android:textStyle="bold"
+          android:textColor="#e74c3c"
+            android:textSize="20sp" />
+        <ToggleButton
+            android:layout_centerHorizontal="true"
+            android:id="@+id/fan2"
+            android:layout_marginTop="10dp"
+            android:onClick="send"
+            android:textOff="off"
+            android:textOn="on" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regulator"
+            />
+        <TextView
+            android:layout_marginRight="33dp"
+             android:layout_alignBottom="@+id/fan2"
+            android:layout_alignRight="@+id/im2"
+            android:layout_alignTop="@+id/fan2"
+            android:layout_below="@id/regulator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fan 2: "
+            android:textStyle="bold"
+android:textColor="#e74c3c"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+ 	 <ImageView
+ 	     android:layout_width="fill_parent"
+ 	     android:layout_height="400dp"
+ 	     android:layout_alignParentBottom="true"
+ 	     android:layout_alignParentLeft="true"
+ 	     android:scaleType="fitEnd"
+ 	     android:src="@drawable/roboceta" />
+
+</RelativeLayout>

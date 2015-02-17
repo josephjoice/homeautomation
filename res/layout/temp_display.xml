@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+     
+	<TextView 
+	   android:layout_marginLeft="80dp"
+	   android:textColor="#e74c3c"
+	     android:textSize="20sp"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="Sensors In Home"/>
+     
+	
+	<ImageView
+	    android:layout_marginLeft="5dp"
+	    android:id="@+id/i1"
+	    android:src="@drawable/sensicon"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	   android:layout_marginTop="60dp"
+	    />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tempin"
+ 		android:layout_toRightOf="@id/i1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e74c3c"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:text="Temperature not received"
+        android:textSize="18sp"
+        />
+    <ImageView
+         android:layout_below="@id/tempin"
+	    android:layout_marginLeft="5dp"
+	    android:id="@+id/i2"
+	    android:src="@drawable/sensicon"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	  android:layout_marginTop="10dp"
+	    />    
+         <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/i1"
+        android:layout_below="@id/tempin"
+        android:id="@+id/tempout"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e74c3c"
+        android:textStyle="bold"
+        android:text="Temperature not received"
+        android:textSize="18sp"
+        />
+         <ImageView
+         android:layout_below="@id/tempout"
+	    android:layout_marginLeft="5dp"
+	    android:id="@+id/i3"
+	    android:src="@drawable/sensicon"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	  android:layout_marginTop="10dp"
+	    />      
+        <TextView
+        android:layout_below="@id/tempout"
+        android:id="@+id/lightin"
+        android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/i1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e74c3c"
+        android:textStyle="bold"
+        android:text="Light In"
+        android:textSize="18sp"
+        /> 
+         <ImageView
+         android:layout_below="@id/lightin"
+	    android:layout_marginLeft="5dp"
+	    android:id="@+id/i4"
+	    android:src="@drawable/sensicon"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	  android:layout_marginTop="10dp"
+	    />    
+        <TextView
+            android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/i1"  
+            
+        android:layout_below="@id/lightin"
+        android:id="@+id/lightout"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e74c3c"
+        android:textStyle="bold"
+        android:text="Light Out"
+        android:textSize="18sp"
+        /> 
+     
+            
+        <ImageView
+         android:layout_below="@id/lightout"
+	    android:layout_marginLeft="5dp"
+	    android:id="@+id/i5"
+	    android:src="@drawable/sensicon"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	  android:layout_marginTop="10dp"
+	    />    
+        <TextView
+             android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/i5"  
+        android:layout_below="@id/lightout"
+        android:id="@+id/motion"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e74c3c"
+        android:textStyle="bold"
+        android:text="Motion not detected"
+        android:textSize="18sp"
+        />    
+       <ImageView
+         android:layout_below="@id/motion"
+	    android:layout_marginLeft="5dp"
+	    android:id="@+id/i6"
+	    android:src="@drawable/sensicon"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	  android:layout_marginTop="10dp"
+	    />    
+        <TextView
+             android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/i1"  
+        android:layout_below="@id/motion"
+        android:id="@+id/lpg"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e74c3c"
+        android:textStyle="bold"
+        android:text="LPG Safe"
+        android:textSize="18sp"
+        />  
+           <ToggleButton
+            android:layout_marginLeft="50dp"
+          
+            android:layout_below="@id/lpg"
+            android:id="@+id/sleep_mode"
+           android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="send"
+            android:textOff="Sleep OFF"
+            android:textOn="Sleep ON" />    
+         <ToggleButton
+             
+             android:layout_marginRight="50dp"
+             android:layout_toRightOf="@id/sleep_mode"
+             android:layout_below="@id/lpg"
+
+            android:id="@+id/sensor_state"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="send"
+            android:textOff="Sensors OFF"
+            android:textOn="Sensors ON" />
+ <ImageView
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/roboceta"/>
+</RelativeLayout>

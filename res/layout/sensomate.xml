@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:background="#000000">
+    <TextView
+        android:textColor="#e74c3c"
+        android:layout_marginTop="6dp"
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programmed Appliances"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+    
+ <TextView
+     android:textColor="#e74c3c"
+ android:layout_below="@id/head"
+     android:layout_marginTop="10dp"
+      android:layout_centerHorizontal="true"
+     android:id="@+id/text1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="6dp"
+     android:text="Light 1  "
+     android:textSize="20sp" />
+
+ <Button
+     android:layout_marginBottom="6dp"
+     android:layout_centerHorizontal="true"
+     android:id="@+id/prog1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@color/button_src"
+     android:onClick="program"
+     android:padding="5dp"
+     android:layout_below="@id/text1"
+     android:text="Program"
+     android:textSize="20sp" />
+ <TextView
+     android:textColor="#e74c3c"
+     android:layout_marginBottom="6dp"
+     android:id="@+id/text2"
+     android:layout_below="@id/prog1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:text="Light 2 "
+     android:textSize="20sp" />
+
+ <Button
+     android:layout_marginBottom="6dp"
+     android:id="@+id/prog2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/text2"
+     android:layout_centerHorizontal="true"
+     android:background="@color/button_src"
+     android:onClick="program"
+     android:padding="5dp"
+     android:text="Program"
+     android:textSize="20sp" />
+ <TextView
+     android:textColor="#e74c3c"
+      android:layout_marginBottom="6dp"
+     android:layout_below="@id/prog2"
+     android:id="@+id/text3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Fan"
+     android:textSize="20sp"
+     android:layout_centerHorizontal="true"/>
+ <Button
+     android:textSize="20sp"
+     android:padding="5dp"
+      android:onClick="program"
+     android:id="@+id/prog3"
+     android:layout_below="@id/text3"
+      android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:background="@color/button_src"
+      android:text="Program"
+      
+     />
+      <ImageView
+     android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/roboceta"/>
+ 
+
+     </RelativeLayout>

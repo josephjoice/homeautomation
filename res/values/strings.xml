@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Smart Home</string>
+<string name="appVersion">1.1</string>
+<string name="hello">Appliances Control</string>
+<string name="ledON"></string>
+<string name="ledOFF"></string>
+<string name="forward"></string>
+<string name="reverse"></string>
+<string name="acc_default">:</string>
+<string name="connected">Disconnect from Smart Home</string>
+<string name="disconnected">Connect to Smart Home</string>
+<string name="no_bt_device">Bluetooth is not available.</string>
+<string name="bt_not_enabled_leaving">Bluetooth was not enabled.</string>
+<string name="macFailed">Error retrieving MAC address.</string>
+<string name="about_title">About</string>
+<string name="aboutText">Smart Home is an open source IOT product developed by Robocet</string>
+<string name="website_url">www.robocet.com</string>
+<string name="websiteButton"></string>
+<string name="okButton">OK</string>
+<string name="pleaseWait">Please Wait</string>
+<string name="makingConnectionString">Connecting to bluetooth device...</string>
+<string name="failedToConnect">Failed to connect to device.</string>
+
+<!-- DeviceListActivity -->
+ <string name="scanning">scanning for devices...</string>
+ <string name="select_device">select a device to connect</string>
+ <string name="none_paired">No devices have been paired</string>
+ <string name="none_found">No devices found</string>
+ <string name="title_paired_devices">Paired Devices</string>
+ <string name="title_other_devices">Other Available Devices</string>
+ <string name="button_scan">Scan for devices</string>
+</resources>

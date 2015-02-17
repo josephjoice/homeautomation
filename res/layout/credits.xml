@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ct"
+    
+>
+
+  <TextView
+      android:textStyle="bold"
+      android:id="@+id/a1"
+      android:textSize="30sp"
+      android:textColor="#e74c3c"
+      android:text="Developed By"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+	  android:layout_marginTop="50dp"
+      android:layout_centerHorizontal="true"/>
+<TextView
+    android:textStyle="bold"
+    android:layout_below="@id/a1"
+      android:id="@+id/a2"
+      android:textSize="20sp"
+      android:textColor="#e74c3c"
+      android:text="Aswin V"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+	  android:layout_marginTop="30dp"
+      android:layout_centerHorizontal="true"/>
+<TextView
+    android:textStyle="bold"
+      android:id="@+id/a3"
+      android:layout_below="@id/a2"
+      android:textSize="20sp"
+      android:textColor="#e74c3c"
+      android:text="Pooja K Jayadeep"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+	  android:layout_marginTop="30dp"
+      android:layout_centerHorizontal="true"/>
+<TextView
+    android:textStyle="bold"
+    android:layout_below="@id/a3"
+      android:textSize="20sp"
+      android:textColor="#e74c3c"
+      android:text="Joseph Joice"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+	  android:layout_marginTop="30dp"
+      android:layout_centerHorizontal="true"/>
+   <ImageView
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/roboceta"/>
+
+</RelativeLayout >
